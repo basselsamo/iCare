@@ -83,7 +83,6 @@ export const CostCalculator: React.FC = () => {
               <br></br>
               <br></br>
               <p>˚Theft & loss avialble for iPhone, iPad and Apple Watch</p>
-               <br></br>
               <p>˚AppleCare+ for iPhone without Theft & loss is discontinued</p>
             </p>
           </CardContent>
@@ -120,6 +119,7 @@ export const CostCalculator: React.FC = () => {
               <br></br>
               <br></br>
               <p>˚Theft & loss avialble for iPhone, iPad and Apple Watch
+                <br></br>
                 ˚Old devices must be purchased up to 4 years ago
               </p>
             </p>
