@@ -54,7 +54,7 @@ export const CostCalculator: React.FC = () => {
  ? 'bg-gradient-to-br from-success/5 to-success/10 border-success/20 shadow-lg' : 'bg-gradient-to-br from-card to-muted/20 border-border/50'}`}>
           <CardHeader className="pb-3">
             <CardTitle className="flex items-center gap-2 text-lg">
-               AppleCare+
+               AppleCare+ with Theft & Loss
               {!showSplit && recommended === "AppleCare+" && (
                 <Badge variant="default" className="bg-success text-success-foreground">
                   <Star className="w-3 h-3 mr-1" />
@@ -68,7 +68,23 @@ export const CostCalculator: React.FC = () => {
               ${appleCostPlusCost.toFixed(2)}/mo
             </div>
             <p className="text-sm text-muted-foreground">
-              Individual coverage for each device
+              ✪ Individual coverage for each device
+              <br></br>
+              <br></br>
+              ✔ Theft & loss up to 2 claims in 12 months
+              <br></br>
+              ✔ Unlimited repairs for accidents like drops and spills
+              <br></br>
+              ✔ Battery replacements at no extra charge
+              <br></br>
+              ✔ 24/7 priority support from Apple experts
+              <br></br>
+              ✔ Express Replacement Service
+              <br></br>
+              <br></br>
+              <p>˚Theft & loss avialble for iPhone, iPad and Apple Watch</p>
+               <br></br>
+              <p>˚AppleCare+ for iPhone without Theft & loss is discontinued</p>
             </p>
           </CardContent>
         </Card>
@@ -91,7 +107,22 @@ export const CostCalculator: React.FC = () => {
               ${appleCareOneCost.toFixed(2)}/mo
             </div>
             <p className="text-sm text-muted-foreground">
-              Covering up to 3 devices + extras for $5.99/device
+              ✪ Covering multiple devices in one plan
+              <br></br>
+              <br></br>
+              ✔ Protect up to 3 devices at one low price of $19.99/mo
+              <br></br>
+              ✔ Theft & loss up to 3 claims in 12 months
+              <br></br>
+              ✔ Add more devices, including ˚old ones for $5.99/mo each
+              <br></br>
+              ✔ A replacement shipped to you before your device is repaired
+              <br></br>
+              <br></br>
+              <p>˚Theft & loss avialble for iPhone, iPad and Apple Watch
+                <br></br>
+                ˚Old devices must be purchased up to 4 years ago
+              </p>
             </p>
           </CardContent>
         </Card>
