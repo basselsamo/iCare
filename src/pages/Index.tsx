@@ -15,9 +15,9 @@ const Index = () => {
           {/* Header */}
           <header className="text-center mb-8">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+              <h2 className="text-4xl font-bold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
                 iCare —  AppleCare Plan Calculator
-              </h1>
+              </h2>
             </div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Compare  AppleCare+ and  CareOne to find the best protection plan for your Apple devices

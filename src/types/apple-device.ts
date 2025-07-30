@@ -45,7 +45,7 @@ export const SELECT_PLACEHOLDER: AppleDevice = {
 export const SELECT_AGAIN_PLACEHOLDER: AppleDevice = {
   id: "select-again-placeholder", 
   type: DeviceType.Other,
-  name: "Select Another Device",
+  name: "Select a device",
   monthlyCost: 0,
   quantity: 1
 };

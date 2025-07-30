@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Badge } from "@/components/ui/badge";
 import { useDevices } from "@/contexts/DeviceContext";
-import { Calculator, Crown, Shield, TrendingUp } from "lucide-react";
+import { Calculator, Crown, Shield, TrendingUp, Star } from "lucide-react";
 
 export const CostCalculator: React.FC = () => {
   const { devices, calculations } = useDevices();
@@ -18,6 +18,8 @@ export const CostCalculator: React.FC = () => {
   const appleCareOneCost = calculations.appleCareOneCost(useAnnual);
   const recommended = calculations.recommendedOption(useAnnual);
   const bestSplit = calculations.bestCostSplit(useAnnual);
+  const showSplit = bestSplit.total < Math.min(appleCostPlusCost, appleCareOneCost);
+
 
   return (
     <div className="space-y-6">
@@ -48,13 +50,14 @@ export const CostCalculator: React.FC = () => {
 
       {/* Cost Comparison */}
       <div className="grid gap-4 md:grid-cols-2">
-        <Card className={`transition-all duration-300 ${recommended === "AppleCare+" ? 'bg-gradient-to-br from-success/5 to-success/10 border-success/20 shadow-lg' : 'bg-gradient-to-br from-card to-muted/20 border-border/50'}`}>
+        <Card className={`transition-all duration-300 ${!showSplit && recommended === "AppleCare+"
+ ? 'bg-gradient-to-br from-success/5 to-success/10 border-success/20 shadow-lg' : 'bg-gradient-to-br from-card to-muted/20 border-border/50'}`}>
           <CardHeader className="pb-3">
             <CardTitle className="flex items-center gap-2 text-lg">
                AppleCare+
-              {recommended === "AppleCare+" && (
+              {!showSplit && recommended === "AppleCare+" && (
                 <Badge variant="default" className="bg-success text-success-foreground">
-                  <Crown className="w-3 h-3 mr-1" />
+                  <Star className="w-3 h-3 mr-1" />
                   Recommended
                 </Badge>
               )}
@@ -70,13 +73,14 @@ export const CostCalculator: React.FC = () => {
           </CardContent>
         </Card>
 
-        <Card className={`transition-all duration-300 ${recommended === "AppleCare One" ? 'bg-gradient-to-br from-success/5 to-success/10 border-success/20 shadow-lg' : 'bg-gradient-to-br from-card to-muted/20 border-border/50'}`}>
+        <Card className={`transition-all duration-300 ${!showSplit && recommended === "AppleCare One"
+ ? 'bg-gradient-to-br from-success/5 to-success/10 border-success/20 shadow-lg' : 'bg-gradient-to-br from-card to-muted/20 border-border/50'}`}>
           <CardHeader className="pb-3">
             <CardTitle className="flex items-center gap-2 text-lg">
                 CareOne
-              {recommended === "AppleCare One" && (
+              {!showSplit && recommended === "AppleCare One" && (
                 <Badge variant="default" className="bg-success text-success-foreground">
-                  <Crown className="w-3 h-3 mr-1" />
+                  <Star className="w-3 h-3 mr-1" />
                   Recommended
                 </Badge>
               )}
@@ -98,9 +102,10 @@ export const CostCalculator: React.FC = () => {
         <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg">
-              <Crown className="w-5 h-5 text-primary" />
+              
               Optimal Split Strategy
               <Badge variant="default" className="bg-primary text-primary-foreground">
+                <Crown className="w-3 h-3 mr-1" />
                 Best Value
               </Badge>
             </CardTitle>
@@ -139,7 +144,7 @@ export const CostCalculator: React.FC = () => {
             {bestSplit.carePlusDevices.length > 0 && (
               <div className="space-y-2">
                 <h4 className="font-medium flex items-center gap-2">
-                   AppleCare+ ({bestSplit.carePlusDevices.length} devices)
+                    AppleCare+ ({bestSplit.carePlusDevices.length} devices)
                 </h4>
                 <div className="text-sm text-muted-foreground bg-muted/30 p-3 rounded-lg space-y-1">
                   {calculations.structuredDeviceSummary(bestSplit.carePlusDevices, useAnnual).map((item, idx) => (
