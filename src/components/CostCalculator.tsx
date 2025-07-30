@@ -73,7 +73,7 @@ export const CostCalculator: React.FC = () => {
         <Card className={`transition-all duration-300 ${recommended === "AppleCare One" ? 'bg-gradient-to-br from-success/5 to-success/10 border-success/20 shadow-lg' : 'bg-gradient-to-br from-card to-muted/20 border-border/50'}`}>
           <CardHeader className="pb-3">
             <CardTitle className="flex items-center gap-2 text-lg">
-               CareOne
+               CareOne
               {recommended === "AppleCare One" && (
                 <Badge variant="default" className="bg-success text-success-foreground">
                   <Crown className="w-3 h-3 mr-1" />
