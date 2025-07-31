@@ -82,7 +82,7 @@ export const CostCalculator: React.FC = () => {
               ✔ Express Replacement Service
               <br></br>
               <br></br>
-              <p>˚Theft & loss avialble for iPhone, iPad and Apple Watch
+              <p>˚Theft & loss available for iPhone, iPad and Apple Watch
                 <br></br>
                 ˚AppleCare+ for iPhone without Theft & loss is discontinued
               </p>
@@ -122,7 +122,7 @@ export const CostCalculator: React.FC = () => {
               ✔ A replacement shipped to you before your device is repaired
               <br></br>
               <br></br>
-              <p>˚Theft & loss avialble for iPhone, iPad and Apple Watch
+              <p>˚Theft & loss available for iPhone, iPad and Apple Watch
                 <br></br>
                 ˚Old devices must be purchased up to 4 years ago
               </p>
