@@ -117,7 +117,7 @@ export const CostCalculator: React.FC = () => {
               <br></br>
               ✔ Theft & loss up to 3 claims in 12 months
               <br></br>
-              ✔ Additional devices, including ˚old ones for $5.99/mo each
+              ✔ Additional devices, incl. ˚old ones for $5.99/mo each
               <br></br>
               ✔ A replacement shipped to you before your device is repaired
               <br></br>

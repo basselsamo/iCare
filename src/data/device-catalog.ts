@@ -39,7 +39,7 @@ export const PREDEFINED_DEVICES: AppleDevice[] = [
 
   createDevice(DeviceType.VisionPro, "Apple Vision Pro", 24.99, 249.99),
 
-  createDevice(DeviceType.AirPods, "AirPods (All exc. AirPods Max), Beats (All)", 1.49, 14.99),
+  createDevice(DeviceType.AirPods, "AirPods (All excl. AirPods Max), Beats (All)", 1.49, 14.99),
   createDevice(DeviceType.AirPods, "AirPods Max", 2.99, 29.99),
 
   createDevice(DeviceType.TV, "Apple TV, Apple TV 4K", 0.99, 9.99),
