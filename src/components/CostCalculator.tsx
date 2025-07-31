@@ -119,8 +119,6 @@ export const CostCalculator: React.FC = () => {
               <br></br>
               ✔ Additional devices, incl. ˚old ones for $5.99/mo each
               <br></br>
-              ✔ A replacement shipped to you before your device is repaired
-              <br></br>
               <br></br>
               <p>˚Theft & loss available for iPhone, iPad and Apple Watch
                 <br></br>
