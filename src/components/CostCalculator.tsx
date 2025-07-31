@@ -113,9 +113,11 @@ export const CostCalculator: React.FC = () => {
               <br></br>
               ✔ Protect up to 3 devices at one low price of $19.99/mo
               <br></br>
+              ✔ All AppleCare+ benefits with some extras
+              <br></br>
               ✔ Theft & loss up to 3 claims in 12 months
               <br></br>
-              ✔ Add more devices, including ˚old ones for $5.99/mo each
+              ✔ Additional devices, including ˚old ones for $5.99/mo each
               <br></br>
               ✔ A replacement shipped to you before your device is repaired
               <br></br>
